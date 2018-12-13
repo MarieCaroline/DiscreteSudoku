@@ -1,3 +1,5 @@
+# This is the naive sudoku generator.
+
 # class that controls the content of each individual cell describing its location
 # and properties on the grid
 class Cell:
@@ -16,7 +18,7 @@ for i in range(81):
     c = i + 1 - x
     if c == 9:
         x = x + 9
-    #square "math"
+    #square "math" applies the right square number to each cell
     if r == 1 or r == 2 or r == 3:
         if c == 1 or c == 2 or c == 3:
             s = 1
@@ -56,7 +58,7 @@ i = 0
 while i < len(row):
     cond = True
     while cond:
-        cond = False #I'm honestly not sure why this doesn't immediatly leave the while loop but it doesn't
+        cond = False
         while row[i].v == 9: #if value is 9 (and thus it has tried all numbers) go back to the previous cell
             row[i].v = 0
             i = i - 1    
