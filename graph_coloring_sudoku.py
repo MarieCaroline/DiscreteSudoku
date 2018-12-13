@@ -1,3 +1,6 @@
+# This was the second itteration after the naive generator found in sudoku.py
+# After this code the programming was moved to: https://colab.research.google.com/drive/1sDVPyCfg_MWkPr_zddkvG0rA5vFRGmfZ
+
 from random import shuffle, sample
 import numpy as np
 
